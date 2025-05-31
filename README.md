@@ -39,7 +39,7 @@ gcc quadratic-solver.c -o quadratic-solver -lm
 | Post-Increment Demo              | `postincrement.c`         | Demonstrates post-increment operator (`i++`).                       |
 | Expression Evaluation            | `expression-evalvation.c` | Evaluates a mathematical expression to show operator precedence.    |
 | Arithmetic Expression Calculator | `arthematic-expression.c` | Performs basic arithmetic operations (addition, subtraction, etc.). |
-
+& much more to be added
 ---
 
 ## ✅ Compilation Example
