@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+int num;
+printf("Table Generator\n");
+printf("Enter a number: ");
+scanf("%d", &num);
+for(int i = 1; i <= 10; i++){
+printf("%d X %d = %d\n", num, i, (num * i));
+if(i == 7){
+break;}
+}
+return 0;
+}
