@@ -1,0 +1,3 @@
+- Searching 
+  - Linear searching
+  - Binary searching
