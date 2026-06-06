@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-/*RANDOM DICE NUMBER*/ 
+/* RANDOM DICE NUMBER*/ 
 int dice_num(){
 	int x = 0;
 	x = rand() % 6 + 1;
@@ -27,16 +27,27 @@ void game(){
 			}
 			else{
 				dice = dice_num();
+				printf("Throwing the dice.");
+				fflush(stdout);
+				sleep(1);
+				printf(".");
+				fflush(stdout);
+				sleep(1);
+				printf(".");
+				fflush(stdout);
+				sleep(1);
+				printf(".\n");
+				fflush(stdout);
 				if(guess == dice){
-				printf("%d \n", dice);
+				printf("DICE: %d \n", dice);
 				printf("You Won!! \n");
 				balance = balance + 3*bet; 
-				printf("%d \n", balance);
+				printf("NEW BALANCE: %d \n", balance);
 			}else{
-				printf("%d \n", dice);
+				printf("DICE: %d \n", dice);
 				printf("You Lost!! \n");
 				balance = balance - bet;
-				printf("%d \n", balance);
+				printf("NEW BALANCE: %d \n", balance);
 				if(balance ==0){
 					printf("You Are Bankrupt!");
 					sleep(2);
@@ -51,7 +62,7 @@ void game(){
 	}
 	while(balance>0);
 }
-//CHOICES FUNCTION
+// CHOICES FUNCTION
 void choices(){
 	int choice;
 	do{
